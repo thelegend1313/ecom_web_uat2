@@ -1,14 +1,14 @@
 import axios from 'axios'
 
 
-export const currentUser = async (token) => await axios.post('https://ecom-api-uat2.vercel.app/api/current-user', {}, {
+export const currentUser = async (token) => await axios.post('https://ecom-api-uat2-atwv4u02c-tees-projects-fc7a73b8.vercel.app/api/current-user', {}, {
     headers: {
         Authorization: `Bearer ${token}`
     }
 })
 
 export const currentAdmin = async (token) => {
-    return await axios.post('https://ecom-api-uat2.vercel.app/api/current-admin', {}, {
+    return await axios.post('https://ecom-api-uat2-atwv4u02c-tees-projects-fc7a73b8.vercel.app/api/current-admin', {}, {
         headers: {
             Authorization: `Bearer ${token}`
         }
