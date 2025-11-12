@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const createBranch = async (token, form) => {
     // code body
-    return axios.post('http://localhost:5001/api/branch', form, {
+    return axios.post('ecom-api-uat2.vercel.app/api/branch', form, {
         headers: {
             Authorization: `Bearer ${token}`
         }
@@ -12,12 +12,12 @@ export const createBranch = async (token, form) => {
 
 export const listBranch = async () => {
     // code body
-    return axios.get('http://localhost:5001/api/branch')
+    return axios.get('ecom-api-uat2.vercel.app/api/branch')
 }
 
 export const removeBranch = async (token, id) => {
     // code body
-    return axios.delete('http://localhost:5001/api/branch/'+id, {
+    return axios.delete('ecom-api-uat2.vercel.app/api/branch/'+id, {
         headers: {
             Authorization: `Bearer ${token}`
         }

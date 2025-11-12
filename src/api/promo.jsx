@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const createPromo = async (token, form) => {
     // code body
-    return axios.post('http://localhost:5001/api/promo', form, {
+    return axios.post('ecom-api-uat2.vercel.app/api/promo', form, {
         headers: {
             Authorization: `Bearer ${token}`
         }
@@ -12,12 +12,12 @@ export const createPromo = async (token, form) => {
 
 export const listPromo = async () => {
     // code body
-    return axios.get('http://localhost:5001/api/promo')
+    return axios.get('ecom-api-uat2.vercel.app/api/promo')
 }
 
 export const removePromo = async (token, id) => {
     // code body
-    return axios.delete('http://localhost:5001/api/promo/'+id, {
+    return axios.delete('ecom-api-uat2.vercel.app/api/promo/'+id, {
         headers: {
             Authorization: `Bearer ${token}`
         }
