@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const createColor = async (token, form) => {
     // code body
-    return axios.post('ecom-api-uat2.vercel.app/api/color', form, {
+    return axios.post('https://ecom-api-uat2.vercel.app/api/color', form, {
         headers: {
             Authorization: `Bearer ${token}`
         }
@@ -12,12 +12,12 @@ export const createColor = async (token, form) => {
 
 export const listColor = async () => {
     // code body
-    return axios.get('ecom-api-uat2.vercel.app/api/color')
+    return axios.get('https://ecom-api-uat2.vercel.app/api/color')
 }
 
 export const removeColor = async (token, id) => {
     // code body
-    return axios.delete('ecom-api-uat2.vercel.app/api/color/'+id, {
+    return axios.delete('https://ecom-api-uat2.vercel.app/api/color/'+id, {
         headers: {
             Authorization: `Bearer ${token}`
         }
