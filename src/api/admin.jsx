@@ -12,8 +12,7 @@ export const getOrdersAdmin = async (token) => {
 };
 export const changeOrderStatus = async (token, orderId, orderStatus) => {
   // code body
-  return axios.put(
-    "ecom-api-uat2.vercel.app/api/admin/order-status",
+  return axios.put("ecom-api-uat2.vercel.app/api/admin/order-status",
     {
       orderId,
       orderStatus,
