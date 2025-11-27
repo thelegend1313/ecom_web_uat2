@@ -5,7 +5,7 @@ import CheckoutForm from '../card/CheckoutForm';
 import { payment } from "../../api/stripe";
 import useEcomStore from "../../store/ecom-store";
 
-const stripePromise = loadStripe("pk_test_51RmbDUPDC7tuqqBCeFISdurGHzW25VZgMbiMXELraIIRydOmYnHPft3IkjEa9fdu7rSYp7PaqK6ZkWlntR0buiMZ001ThU52wh");
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PK);
 
 
 const Payment = () => {
